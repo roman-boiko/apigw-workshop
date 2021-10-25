@@ -19,7 +19,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
         return {
             statusCode: 200,
             body: responseBody
-        }
+        };
     }
     catch (error){
         console.error(error);
@@ -27,7 +27,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
         return {
             statusCode: 500,
             body: responseBody
-        }
+        };
     }
     
 }
